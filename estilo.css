@@ -173,7 +173,7 @@ nav a:hover {
     padding: 25px;
     transition: transform 0.3s ease;
 }
-.container-impacto 2 {
+.container-impacto-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -181,7 +181,7 @@ nav a:hover {
     max-width: 1000px;
     margin: 30px auto;
 }
-.card-impacto 2 {
+.card-impacto-2 {
     flex: 1 1 200px;
     min-width: 220px;
     max-width: 450px;
