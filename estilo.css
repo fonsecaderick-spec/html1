@@ -155,23 +155,20 @@ nav a {
 nav a:hover {
     background: #14501f;
 }
-.container-impacto {
+.container-impacto{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1000px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
     margin: 30px auto;
+    padding: 20px;
 }
-.card-impacto {
-    flex: 1 1 200px;
-    min-width: 220px;
-    max-width: 450px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    border-radius: 12px;
+
+.card-impacto{
+    width: 300px;
+    background: rgba(255,255,255,0.15);
     padding: 25px;
-    transition: transform 0.3s ease;
+    border-radius: 12px;
 }
 .container-impacto-2 {
       display: grid;
