@@ -179,11 +179,11 @@ nav a:hover {
     justify-content: center;
     gap: 20px;
     max-width: 1000px;
-    width: 100%
+    width: 100%;
     margin: 30px auto;
 }
 .card-impacto-2 {
-    width: 100%
+    width: 100%;
     min-width: 220px;
     max-width: 450px;
     background: rgba(255, 255, 255, 0.15);
