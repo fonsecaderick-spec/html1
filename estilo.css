@@ -173,6 +173,24 @@ nav a:hover {
     padding: 25px;
     transition: transform 0.3s ease;
 }
+.container-impacto 2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.card-impacto 2 {
+    flex: 1 1 200px;
+    min-width: 220px;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
 /* Container Geral da Seção da Loja */
 .secao-loja {
     max-width: 1200px;
