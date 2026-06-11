@@ -281,7 +281,7 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-  .cadastro-produtor form {
+  .container-login form {
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -289,19 +289,19 @@ nav a:hover {
         margin-top: 60px;
     }
 
-    .cadastro-produtor label {
+     .container-login label {
         font-weight: bold;
         font-size: 18px;
         display: block;
         margin-bottom: 5px;
     }
 
-    .cadastro-produtor input {
+    .container-login input {
         width: 100%;
         box-sizing: border-box; /* Garante que o input não passe do limite do card */
     }
 
-    .cadastro-produtor button {
+     .container-login button {
         margin: 50px auto 0;
         width: 100%;
     }
