@@ -281,27 +281,3 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-  .container-login form {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        gap: 60px;
-        margin-top: 60px;
-    }
-
-     .container-login label {
-        font-weight: bold;
-        font-size: 18px;
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .container-login input {
-        width: 100%;
-        box-sizing: border-box; /* Garante que o input não passe do limite do card */
-    }
-
-     .container-login button {
-        margin: 50px auto 0;
-        width: 100%;
-    }
