@@ -56,21 +56,27 @@ if (formulario) {
         localStorage.setItem("cadastro_contato", contato);
         localStorage.setItem("cadastro_email", email);
 
-        if (arquivoFoto) {
-            let leitor = new FileReader();
+        // --- Substitua o bloco do "if (arquivoFoto)" por este: ---
 
-            leitor.onload = function(e) {
-                localStorage.setItem(
-                    "cadastro_foto",
-                    e.target.result
-                );
+if (arquivoFoto) {
+    let leitor = new FileReader();
 
-                window.location.href = "conclusao.html";
-            };
+    leitor.onload = function(e) {
+        try {
+            localStorage.setItem("cadastro_foto", e.target.result);
+        } catch (erro) {
+            console.warn("A foto é muito grande para o localStorage! O cadastro continuará sem ela.");
+            localStorage.removeItem("cadastro_foto"); // Garante que limpa o que falhou
+        }
+        // Move o redirecionamento para fora do try/catch para garantir que ele mude de página sempre
+        window.location.href = "conclusao.html"; 
+    };
 
-            leitor.readAsDataURL(arquivoFoto);
-        } else {
-            window.location.href = "conclusao.html";
+    leitor.readAsDataURL(arquivoFoto);
+} else {
+    localStorage.removeItem("cadastro_foto"); // Se não enviou foto, limpa o histórico antigo
+    window.location.href = "conclusao.html";
+}
         }
     });
 }
