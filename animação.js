@@ -76,32 +76,22 @@ if (formulario) {
 }
 
     // --- LÓGICA EXCLUSIVA DA TELA DE CONCLUSÃO ---
-    let resumoFazenda = document.getElementById("resumo-fazenda");
-    // Se esse elemento existir, significa que o usuário acabou de entrar na tela de conclusão
-    if (resumoFazenda) {
-        document.getElementById("resumo-fazenda").textContent =
-localStorage.getItem("cadastro_fazenda");
+    // Tela de conclusão
+let resumoFazenda = document.getElementById("resumo-fazenda");
+if (resumoFazenda) {
+    document.getElementById("resumo-fazenda").textContent = localStorage.getItem("cadastro_fazenda");
+    document.getElementById("resumo-local").textContent = localStorage.getItem("cadastro_local");
+    document.getElementById("resumo-produto").textContent = localStorage.getItem("cadastro_produtos");
+    document.getElementById("resumo-contato").textContent = localStorage.getItem("cadastro_contato");
+    document.getElementById("resumo-email").textContent = localStorage.getItem("cadastro_email");
 
-document.getElementById("resumo-local").textContent =
-localStorage.getItem("cadastro_local");
-
-document.getElementById("resumo-produto").textContent =
-localStorage.getItem("cadastro_produtos");
-
-document.getElementById("resumo-contato").textContent =
-localStorage.getItem("cadastro_contato");
-
-document.getElementById("resumo-email").textContent =
-localStorage.getItem("cadastro_email");
-        
     let fotoSalva = localStorage.getItem("cadastro_foto");
     let tagImg = document.getElementById("resumo-foto");
-
-    if(fotoSalva && tagImg){
+    if (fotoSalva && tagImg) {
         tagImg.src = fotoSalva;
         tagImg.style.display = "block";
-        }
     }
+}
 });
 // --- PARTE DA LOJA ---
 // Lógica para adicionar o item (substitua o alert pelo seu sistema de carrinho se tiver um)
