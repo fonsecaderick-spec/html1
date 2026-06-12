@@ -72,9 +72,6 @@ if (arquivoFoto) {
         window.location.href = "conclusao.html"; 
     };
 
-    leitor.readAsDataURL(arquivoFoto);
-} else {
-    localStorage.removeItem("cadastro_foto"); // Se não enviou foto, limpa o histórico antigo
     window.location.href = "conclusao.html";
 }
         }
