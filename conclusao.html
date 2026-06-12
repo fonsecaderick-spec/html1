@@ -2,62 +2,30 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro de Produtor - Agro Forte</title>
+    <title>Resumo do Cadastro - Agro Forte</title>
     <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-    <div class="cadastro-produtor" id="bloco-cadastro">
-        <h2 id="boas-vindas-nome">Seja um Parceiro 🌱</h2>
-        <p>Cadastre sua fazenda familiar e venda seus produtos direto para os clientes!</p>
-        
-        <form id="formCadastro">
+<div class="cadastro-produtor">
+    <h2>Cadastro Concluído 🌱</h2>
+    <p>Veja os detalhes do seu cadastro:</p>
 
-            <div class="campo">
-            <label for="nome-fazenda">Nome da Fazenda / Produtor:</label>
-            <input type="text" id="nome-fazenda" placeholder="Ex: Sítio Primavera" required>
-</div>
-
-
-            <div class="campo">
-            <label for="localizacao">De onde você é? (Cidade e Estado):</label>
-            <input type="text" id="localizacao" placeholder="Ex: Maringá - PR" required>
-            </div>
-
-
-<div class="campo">
-            <label for="produtos">O que você produz/vende?</label>
-            <input type="text" id="produtos" placeholder="Ex: Alface orgânica, mel, ovos" required>
-            </div>
-
-
-<div class="campo">
-            <label for="contato"> Telefone ou WhatsApp de Contato:</label>
-            <input type="tel" id="contato" placeholder="Ex: (44) 99999-9999" required>
-            </div>
-
-
-<div class="campo">
-            <label for="contato"> email:</label>
-            <input type="tel" id="contato" placeholder="Ex: coxinha123@gmail.com" required>
-            </div>
-
-
-<div class="campo">
-            <label for="foto-produto">Foto do seu Produto (Obrigatório):</label>
-            <input type="file" id="foto-produto" accept="image/*" required>
-</div>
-            <button type="submit">Finalizar Cadastro</button>
-        </form>
-        
-        <br>
-        <a href="index.html" class="link-voltar">Voltar para o Início</a>
+    <div class="resumo">
+        <p><strong>Fazenda / Produtor:</strong> <span id="resumo-fazenda"></span></p>
+        <p><strong>Localização:</strong> <span id="resumo-local"></span></p>
+        <p><strong>Produtos:</strong> <span id="resumo-produto"></span></p>
+        <p><strong>Telefone:</strong> <span id="resumo-contato"></span></p>
+        <p><strong>Email:</strong> <span id="resumo-email"></span></p>
+        <p><strong>Foto do Produto:</strong></p>
+        <img id="resumo-foto" style="display:none; max-width:300px; margin-top:10px;">
     </div>
 
-    <div class="footer">
-        <p>© 2026 - Agro Forte Sustentável</p>
-    </div>
+    <br>
+    <a href="index.html">Voltar para o Início</a>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
