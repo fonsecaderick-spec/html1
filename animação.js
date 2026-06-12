@@ -92,12 +92,12 @@ if (resumoFazenda) {
     document.getElementById("resumo-email").textContent = localStorage.getItem("cadastro_email");
 
     let fotoSalva = localStorage.getItem("cadastro_foto");
-    let tagImg = document.getElementById("resumo-foto");
-    if (fotoSalva && tagImg) {
-        tagImg.src = fotoSalva;
-        tagImg.style.display = "block";
+        let tagImg = document.getElementById("resumo-foto");
+        if (fotoSalva && tagImg) {
+            tagImg.src = fotoSalva;
+            tagImg.style.display = "block";
+        }
     }
-}
 });
 // --- PARTE DA LOJA ---
 // Lógica para adicionar o item (substitua o alert pelo seu sistema de carrinho se tiver um)
