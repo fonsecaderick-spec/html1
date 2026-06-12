@@ -44,7 +44,7 @@ if (formulario) {
         let nomeFazenda = document.getElementById("nome-fazenda").value;
         let local = document.getElementById("localizacao").value;
         let produtos = document.getElementById("produtos").value;
-        let contato = document.getElementById("contato").value;
+        let contato = document.getElementById("telefone").value;
         let email = document.getElementById("email").value;
 
         let arquivoFoto =
