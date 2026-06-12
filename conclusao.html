@@ -2,22 +2,56 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro Concluído - Agro Forte</title>
+    <title>Cadastro de Produtor - Agro Forte</title>
     <link rel="stylesheet" href="estilo.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<form id="formCadastro" action="conclusao.html"></form>
-    <div class="cadastro-produtor">
-        <h2>🎉 Cadastro Concluído com Sucesso!</h2>
-        <p>Obrigado por se cadastrar. Suas informações já estão no nosso sistema e a sua fazenda estará disponível na nossa lista de produtores em breve!</p>
-        
-        <hr style="border: 1px solid rgba(255,255,255,0.2); margin: 20px 0;">
-        
-        
 
+    <div class="cadastro-produtor" id="bloco-cadastro">
+        <h2 id="boas-vindas-nome">Seja um Parceiro 🌱</h2>
+        <p>Cadastre sua fazenda familiar e venda seus produtos direto para os clientes!</p>
+        
+        <form id="formCadastro">
+
+            <div class="campo">
+            <label for="nome-fazenda">Nome da Fazenda / Produtor:</label>
+            <input type="text" id="nome-fazenda" placeholder="Ex: Sítio Primavera" required>
+</div>
+
+
+            <div class="campo">
+            <label for="localizacao">De onde você é? (Cidade e Estado):</label>
+            <input type="text" id="localizacao" placeholder="Ex: Maringá - PR" required>
+            </div>
+
+
+<div class="campo">
+            <label for="produtos">O que você produz/vende?</label>
+            <input type="text" id="produtos" placeholder="Ex: Alface orgânica, mel, ovos" required>
+            </div>
+
+
+<div class="campo">
+            <label for="contato"> Telefone ou WhatsApp de Contato:</label>
+            <input type="tel" id="contato" placeholder="Ex: (44) 99999-9999" required>
+            </div>
+
+
+<div class="campo">
+            <label for="contato"> email:</label>
+            <input type="tel" id="contato" placeholder="Ex: coxinha123@gmail.com" required>
+            </div>
+
+
+<div class="campo">
+            <label for="foto-produto">Foto do seu Produto (Obrigatório):</label>
+            <input type="file" id="foto-produto" accept="image/*" required>
+</div>
+            <button type="submit">Finalizar Cadastro</button>
+        </form>
+        
         <br>
-        <a href="index.html" class="link-voltar" style="display: block; margin-top: 15px;">Ir para a Página Inicial</a>
+        <a href="index.html" class="link-voltar">Voltar para o Início</a>
     </div>
 
     <div class="footer">
