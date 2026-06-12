@@ -45,18 +45,27 @@
             
         }
         input[type="submit"]{
-          background-color:green;
-          color: greeen;
+          background-color: green;
+            color: white; 
             font-size: 16px;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
         }
         input[type="submit"]:hover{
             cursor: pointer;
-            opacity: 0.9;
+            opacity: 1;
             text-decoration: none;
         }
         a{
            font-size: 12px;
+            color: #a9dfbf;
             text-align: center;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -66,14 +75,11 @@
             <form>
                 <input type="email" placeholder="E-mail">
                 <input type="password" placeholder="Senha">
-                <input type="submit" value="">
+                <input type="submit" value="Entrar">
             </form>
             <a href="cadastro.html"color="green">ainda não possui cadastro ?</a>
         </div>
-
-           <a type="submit">Entrar</a> 
-        </form>
-        </div>
+        
         <script src="animação.js"></script>
 </body>
 </html>
