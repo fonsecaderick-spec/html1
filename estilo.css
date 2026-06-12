@@ -155,7 +155,7 @@ nav a {
 nav a:hover {
     background: #14501f;
 }
-.container-impacto{
+.container-impacto-1{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -164,7 +164,7 @@ nav a:hover {
     padding: 20px;
 }
 
-.card-impacto{
+.card-impacto-1{
     width: 300px;
     background: rgba(255,255,255,0.15);
     padding: 25px;
