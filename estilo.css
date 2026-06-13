@@ -293,8 +293,6 @@ nav a:hover {
 .termina-cadastro {
   /* Faz o link se comportar como um botão */
   display: inline-block;
-    justify-content: center; 
-  align-items: center;     
   text-decoration: none;
   
   /* Cores: Texto branco e fundo verde*/
@@ -308,10 +306,6 @@ nav a:hover {
   
   /* Espaçamento interno (para dar corpo ao botão) */
   padding: 40px 36px;
-
-    /* Garante que o botão use a largura total disponível se necessário */
-  width: 100%;
-  box-sizing: border-box; /* Evita que o padding quebre o tamanho do botão */
   
   /* Bordas arredondadas modernas */
   border-radius: 6px;
