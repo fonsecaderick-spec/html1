@@ -317,9 +317,9 @@ nav a:hover {
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-/* Efeito ao passar o mouse (Hover) */
+
 .termina-cadastro:hover {
-  background-color: #0052a3; /* Azul um pouco mais escuro */
+  background-color: darkgreen; 
 }
 
 /* Efeito ao clicar (Active) */
