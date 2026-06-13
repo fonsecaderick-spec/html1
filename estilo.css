@@ -377,3 +377,40 @@ img, video {
         width: 100%;
     }
 }
+/* --- AJUSTE EXCLUSIVO PARA TELAS PEQUENAS (CELULARES) --- */
+@media (max-width: 480px) {
+    /* Dá um espaço nas laterais da página para o conteúdo não colar na borda da tela */
+    body {
+        padding: 10px;
+    }
+
+    /* Força os containers a virarem uma coluna única e limpa */
+    .container-impacto-geral, 
+    .vitrine-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    /* Faz com que os cards usem quase toda a largura disponível do celular, sem esmagar o texto */
+    .card-impacto, 
+    .card-largo, 
+    .produto-card,
+    .cadastro-produtor {
+        width: 100% !important;
+        max-width: 340px !important; /* Limita para não ficar gigante em celulares maiores */
+        box-sizing: border-box !important;
+        padding: 20px !important; /* Reduz um pouco o espaçamento interno para sobrar mais espaço para o texto */
+    }
+
+    /* Ajusta o tamanho dos títulos para que eles não quebrem em várias linhas estranhas */
+    h1, .titulo-loja {
+        font-size: 22px !important;
+    }
+    
+    h2 {
+        font-size: 16px !important;
+    }
+}
