@@ -290,3 +290,39 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+.termina-cadastro {
+  /* Faz o link se comportar como um botão */
+  display: inline-block;
+  text-decoration: none;
+  
+  /* Cores: Texto branco e fundo azul moderno */
+  color: #ffffff;
+  background-color: #0066cc;
+  
+  /* Fonte e tamanho */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  
+  /* Espaçamento interno (para dar corpo ao botão) */
+  padding: 12px 28px;
+  
+  /* Bordas arredondadas modernas */
+  border-radius: 6px;
+  
+  /* Sombra leve para dar profundidade */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  /* Transição suave para os efeitos de passar o mouse */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.termina-cadastro:hover {
+  background-color: #0052a3; /* Azul um pouco mais escuro */
+}
+
+/* Efeito ao clicar (Active) */
+.termina-cadastro:active {
+  transform: scale(0.98); /* Dá um leve efeito de "afundar" ao clicar */
+}
