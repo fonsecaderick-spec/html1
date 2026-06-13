@@ -157,7 +157,7 @@ nav a:hover {
     background: rgba(255,255,255,0.15);
     padding: 25px;
     border-radius: 12px;
-    left: 50px;
+    right: 50px;
 }
 .container-impacto-2 {
       display: grid;
