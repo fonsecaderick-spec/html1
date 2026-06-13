@@ -5,6 +5,7 @@ body{
         #1b5e20 1%,
         #2e7d32 50%,
         #4caf50 100%
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     );
     text-align: center;
 }  
@@ -355,4 +356,24 @@ img, video {
     max-width: 1200px; /* Não deixa o site esticar infinitamente em monitores gigantes */
     margin: 0 auto;    /* Centraliza o bloco na tela */
     padding: 0 20px;   /* Cria um respiro nas laterais para o texto não colar na borda do celular */
+}
+/* --- CONFIGURAÇÕES PARA CELULARES (Telas de até 768px) --- */
+@media (max-width: 768px) {
+    /* Diminui um pouco os títulos para não quebrarem muitas linhas no celular */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+
+    /* Se você usou Grid naqueles blocos de impacto ou na loja, 
+       força eles a ficarem em uma única coluna no celular */
+    .container-impacto-geral, 
+    .vitrine-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 20px;
+    }
+
+    /* Caso tenha usado o modificador do terceiro card, ele passa a se comportar normalmente */
+    .card-largo {
+        grid-column: auto !important;
+        width: 100%;
+    }
 }
