@@ -155,9 +155,9 @@ nav a:hover {
 .card-impacto-1{
     width: 250px;
     background: rgba(255,255,255,0.15);
+    right: 90px;
     padding: 25px;
     border-radius: 12px;
-    right: 90px;
 }
 .container-impacto-2 {
       display: grid;
