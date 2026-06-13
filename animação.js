@@ -109,3 +109,16 @@ function rolarAteALoja() {
         vitrine.scrollIntoView({ behavior: 'smooth' });
     }
 }
+function validarFormulario(event) {
+    // Pega o formulário pelo ID
+    const formulario = document.getElementById('formCadastro');
+    
+    // Verifica se todos os campos 'required' estão preenchidos corretamente
+    if (!formulario.checkValidity()) {
+        // Se o formulário estiver inválido, impede o link de abrir a página
+        event.preventDefault(); 
+        
+        // Força o navegador a mostrar os alertas visuais de erro nos campos vazios
+        formulario.reportValidity();
+    }
+}
