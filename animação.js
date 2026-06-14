@@ -76,22 +76,23 @@ window.location.href = "conclusao.html";
 }
 });
  function mudarAba(tipo) {
-    // 1. Pega os elementos pelos IDs e classes para garantir que não haja erro
+    console.log("Aba clicada:", tipo); // Isso vai nos mostrar no console se o clique funcionou!
+
     const formVendedor = document.getElementById('formCadastro');
     const formComprador = document.getElementById('formComprador');
     const botoes = document.querySelectorAll('.aba-btn');
 
-    // 2. Remove a classe 'ativa' de todos os botões e formulários
+    // 1. Remove a classe 'ativa' de todos os botões e formulários
     botoes.forEach(btn => btn.classList.remove('ativa'));
     if (formVendedor) formVendedor.classList.remove('ativa');
     if (formComprador) formComprador.classList.remove('ativa');
 
-    // 3. Aplica a classe 'ativa' apenas no que foi clicado
+    // 2. Ativa o bloco correto com base no clique
     if (tipo === 'vendedor') {
-        botoes[0].classList.add('ativa');
+        if (botoes[0]) botoes[0].classList.add('ativa');
         if (formVendedor) formVendedor.classList.add('ativa');
     } else if (tipo === 'comprador') {
-        botoes[1].classList.add('ativa');
+        if (botoes[1]) botoes[1].classList.add('ativa');
         if (formComprador) formComprador.classList.add('ativa');
     }
 }
