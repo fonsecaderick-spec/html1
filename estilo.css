@@ -183,7 +183,7 @@ nav a:hover {
 }
 
 .container-impacto-1{
-    display: grid;
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1000px;
@@ -198,8 +198,13 @@ nav a:hover {
     padding: 25px;
     border-radius: 12px;
 }
+@media screen and (max-widht: 769px){
+.card-impacto-1{
+    width:100%;
+    flex-direction: column;
+}
 .container-impacto-2 {
-      display: grid;
+      display: flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 1000px;
@@ -221,7 +226,7 @@ nav a:hover {
 }
 
 .container-impacto-3{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 1000px;
