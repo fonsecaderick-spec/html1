@@ -156,7 +156,7 @@ nav a:hover {
 }
 
 .card-impacto-1{
-    width: 200px;
+    width: 250px;
     background: rgba(255,255,255,0.15);
     right: 90px;
     padding: 25px;
@@ -190,7 +190,7 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 .card-impacto-3{
