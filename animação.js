@@ -75,45 +75,34 @@ if (arquivoFoto) {
 window.location.href = "conclusao.html";
 }
 });
- function mudarAba(tipo) {
-    console.log("Aba clicada:", tipo); // Isso vai nos mostrar no console se o clique funcionou!
+const abas = document.querySelectorAll(".aba-btn");
 
-    const formVendedor = document.getElementById('formCadastro');
-    const formComprador = document.getElementById('formComprador');
-    const botoes = document.querySelectorAll('.aba-btn');
+abas.forEach(botao => {
+    botao.addEventListener("click", () => {
 
-    // 1. Remove a classe 'ativa' de todos os botões e formulários
-    botoes.forEach(btn => btn.classList.remove('ativa'));
-    if (formVendedor) formVendedor.classList.remove('ativa');
-    if (formComprador) formComprador.classList.remove('ativa');
+        // Remove classe ativa dos botões
+        document.querySelectorAll(".aba-btn").forEach(btn => {
+            btn.classList.remove("ativa");
+        });
 
-    // 2. Ativa o bloco correto com base no clique
-    if (tipo === 'vendedor') {
-        if (botoes[0]) botoes[0].classList.add('ativa');
-        if (formVendedor) formVendedor.classList.add('ativa');
-    } else if (tipo === 'comprador') {
-        if (botoes[1]) botoes[1].classList.add('ativa');
-        if (formComprador) formComprador.classList.add('ativa');
-    }
-}
-}
-    // --- LÓGICA EXCLUSIVA DA TELA DE CONCLUSÃO ---
-    // Tela de conclusão
-let resumoFazenda = document.getElementById("resumo-fazenda");
-if (resumoFazenda) {
-    document.getElementById("resumo-fazenda").textContent = localStorage.getItem("cadastro_fazenda");
-    document.getElementById("resumo-local").textContent = localStorage.getItem("cadastro_local");
-    document.getElementById("resumo-produto").textContent = localStorage.getItem("cadastro_produtos");
-    document.getElementById("resumo-contato").textContent = localStorage.getItem("cadastro_contato");
-    document.getElementById("resumo-email").textContent = localStorage.getItem("cadastro_email");
+        // Esconde formulários
+        document.querySelectorAll(".formulario-aba").forEach(form => {
+            form.classList.remove("ativa");
+        });
 
-    let fotoSalva = localStorage.getItem("cadastro_foto");
-        let tagImg = document.getElementById("resumo-foto");
-        if (fotoSalva && tagImg) {
-            tagImg.src = fotoSalva;
-            tagImg.style.display = "block";
+        // Ativa botão clicado
+        botao.classList.add("ativa");
+
+        // Mostra formulário correspondente
+        if (botao.dataset.aba === "vendedor") {
+            document.getElementById("formCadastro")
+                .classList.add("ativa");
+        } else {
+            document.getElementById("formComprador")
+                .classList.add("ativa");
         }
-    }
+    });
+});
 });
 // --- PARTE DA LOJA ---
 // Lógica para adicionar o item (substitua o alert pelo seu sistema de carrinho se tiver um)
