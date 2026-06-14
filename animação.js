@@ -68,6 +68,8 @@ if (arquivoFoto) {
             console.warn("A foto é muito grande para o localStorage! O cadastro continuará sem ela.");
             localStorage.removeItem("cadastro_foto"); // Garante que limpa o que falhou 
         }
+        window.location.href = "conclusao.html";
+        }
       leitor.readAsDataURL(arquivoFoto); // Executa a leitura da imagem
             } else {
 window.location.href = "conclusao.html";
