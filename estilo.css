@@ -224,6 +224,11 @@ nav a:hover {
 .card-impacto:nth-child(2){
     margin-top: 100px;
 }
+    @media screen and (max-widht: 769px){
+.card-impacto-2{
+    width:100%;
+    flex-direction: column;
+}
 
 .container-impacto-3{
     display: flex;
@@ -249,6 +254,11 @@ nav a:hover {
 .container-impacto-3 .card-impacto-3:last-child {
     grid-column: span 2;
     justify-self: center;
+}
+        @media screen and (max-widht: 769px){
+.card-impacto-3{
+    width:100%;
+    flex-direction: column;
 }
 /* Container Geral da Seção da Loja */
 .secao-loja {
