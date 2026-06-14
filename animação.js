@@ -75,48 +75,26 @@ if (arquivoFoto) {
 window.location.href = "conclusao.html";
 }
 });
-   function mudarAba(tipo) {
-    // 1. Remove a classe 'ativa' de todos os botões e de todos os formulários
-    document.querySelectorAll('.aba-btn').forEach(btn => btn.classList.remove('ativa'));
-    document.querySelectorAll('.formulario-aba').forEach(form => form.classList.remove('ativa'));
+ function mudarAba(tipo) {
+    // 1. Pega os elementos pelos IDs e classes para garantir que não haja erro
+    const formVendedor = document.getElementById('formCadastro');
+    const formComprador = document.getElementById('formComprador');
+    const botoes = document.querySelectorAll('.aba-btn');
 
-    // 2. Aplica a classe 'ativa' apenas no que foi clicado
+    // 2. Remove a classe 'ativa' de todos os botões e formulários
+    botoes.forEach(btn => btn.classList.remove('ativa'));
+    if (formVendedor) formVendedor.classList.remove('ativa');
+    if (formComprador) formComprador.classList.remove('ativa');
+
+    // 3. Aplica a classe 'ativa' apenas no que foi clicado
     if (tipo === 'vendedor') {
-        document.querySelector('.abas-cadastro button:nth-child(1)').classList.add('ativa');
-        document.getElementById('formCadastro').classList.add('ativa');
+        botoes[0].classList.add('ativa');
+        if (formVendedor) formVendedor.classList.add('ativa');
     } else if (tipo === 'comprador') {
-        document.querySelector('.abas-cadastro button:nth-child(2)').classList.add('ativa');
-        document.getElementById('formComprador').classList.add('ativa');
+        botoes[1].classList.add('ativa');
+        if (formComprador) formComprador.classList.add('ativa');
     }
 }
-const abas = document.querySelectorAll(".aba-btn");
-
-abas.forEach(botao => {
-    botao.addEventListener("click", () => {
-
-        // Remove classe ativa dos botões
-        document.querySelectorAll(".aba-btn").forEach(btn => {
-            btn.classList.remove("ativa");
-        });
-
-        // Esconde formulários
-        document.querySelectorAll(".formulario-aba").forEach(form => {
-            form.classList.remove("ativa");
-        });
-
-        // Ativa botão clicado
-        botao.classList.add("ativa");
-
-        // Mostra formulário correspondente
-        if (botao.dataset.aba === "vendedor") {
-            document.getElementById("formCadastro")
-                .classList.add("ativa");
-        } else {
-            document.getElementById("formComprador")
-                .classList.add("ativa");
-        }
-    });
-});
 }
     // --- LÓGICA EXCLUSIVA DA TELA DE CONCLUSÃO ---
     // Tela de conclusão
