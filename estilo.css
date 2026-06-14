@@ -61,13 +61,13 @@ button{
         }
 
         .header h2 {
-            font-family: monospace;
+            font-family: sans-serif;
             color: black;
             font-size: 40px;
         }
 
         .header p {
-            font-family: monospace;
+            font-family: sans-serif;
             font-size: 30px;
             color: black;
         }
