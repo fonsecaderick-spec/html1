@@ -125,7 +125,7 @@ function validarFormulario(event) {
 document.addEventListener("DOMContentLoaded", function() {
     const footerHTML = `
         <footer>
-            <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+            <p>&copy;©  2026-Agro Forte.</p>
         </footer>
     `;
     document.body.insertAdjacentHTML('beforeend', footerHTML);
