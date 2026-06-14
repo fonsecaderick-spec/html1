@@ -75,25 +75,34 @@ if (arquivoFoto) {
 window.location.href = "conclusao.html";
 }
 });
-// Lógica para envio do formulário do Comprador
-const formComprador = document.getElementById("formComprador");
-if (formComprador) {
-    formComprador.addEventListener("submit", function(event) {
-        event.preventDefault();
-        
-        // Salva os dados do comprador
-        localStorage.setItem("cadastro_tipo", "comprador");
-        localStorage.setItem("cadastro_nome", document.getElementById("nome-comprador").value);
-        localStorage.setItem("cadastro_local", document.getElementById("localizacao-comprador").value);
-        localStorage.setItem("cadastro_contato", document.getElementById("telefone-comprador").value);
-        localStorage.setItem("cadastro_email", document.getElementById("email-comprador").value);
-        
-        // Remove fotos antigas de vendedor se houver, já que comprador não envia foto
-        localStorage.removeItem("cadastro_foto");
-        
-        window.location.href = "conclusao.html";
+const abas = document.querySelectorAll(".aba-btn");
+
+abas.forEach(botao => {
+    botao.addEventListener("click", () => {
+
+        // Remove classe ativa dos botões
+        document.querySelectorAll(".aba-btn").forEach(btn => {
+            btn.classList.remove("ativa");
+        });
+
+        // Esconde formulários
+        document.querySelectorAll(".formulario-aba").forEach(form => {
+            form.classList.remove("ativa");
+        });
+
+        // Ativa botão clicado
+        botao.classList.add("ativa");
+
+        // Mostra formulário correspondente
+        if (botao.dataset.aba === "vendedor") {
+            document.getElementById("formCadastro")
+                .classList.add("ativa");
+        } else {
+            document.getElementById("formComprador")
+                .classList.add("ativa");
+        }
     });
-}
+});
 }
     // --- LÓGICA EXCLUSIVA DA TELA DE CONCLUSÃO ---
     // Tela de conclusão
