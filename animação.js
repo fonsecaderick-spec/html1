@@ -75,24 +75,6 @@ if (arquivoFoto) {
 window.location.href = "conclusao.html";
 }
 });
-// Lógica para envio do formulário do Comprador
-const formComprador = document.getElementById("formComprador");
-if (formComprador) {
-    formComprador.addEventListener("submit", function(event) {
-        event.preventDefault();
-        
-        // Salva os dados do comprador
-        localStorage.setItem("cadastro_tipo", "comprador");
-        localStorage.setItem("cadastro_nome", document.getElementById("nome-comprador").value);
-        localStorage.setItem("cadastro_local", document.getElementById("localizacao-comprador").value);
-        localStorage.setItem("cadastro_contato", document.getElementById("telefone-comprador").value);
-        localStorage.setItem("cadastro_email", document.getElementById("email-comprador").value);
-        
-        // Remove fotos antigas de vendedor se houver, já que comprador não envia foto
-        localStorage.removeItem("cadastro_foto");
-        
-        window.location.href = "conclusao.html";
-    });
 }
 // --- PARTE DA LOJA ---
 // Lógica para adicionar o item (substitua o alert pelo seu sistema de carrinho se tiver um)
