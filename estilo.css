@@ -144,6 +144,44 @@ nav a {
 nav a:hover {
     background: #14501f;
 }
+/* Container das abas (coloca os botões lado a lado no topo do card) */
+.abas-cadastro {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo padrão dos botões das abas */
+.aba-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Estilo do botão quando a aba estiver selecionada/ativa */
+.aba-btn.ativa {
+    color: #ffffff;
+    border-bottom: 3px solid #004d1a; /* Linha verde escura embaixo do botão ativo */
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Esconde as abas por padrão */
+.formulario-aba {
+    display: none;
+}
+
+/* Mostra apenas a aba que tiver a classe 'ativa' */
+.formulario-aba.ativa {
+    display: block;
+}
+
 .container-impacto-1{
     display: grid;
     justify-content: space-between;
