@@ -75,6 +75,22 @@ if (arquivoFoto) {
 window.location.href = "conclusao.html";
 }
 });
+    function mudarAba(tipo) {
+    // 1. Remove a classe 'ativa' de todos os botões e formulários de aba
+    document.querySelectorAll('.aba-btn').forEach(btn => btn.classList.remove('ativa'));
+    document.querySelectorAll('.formulario-aba').forEach(form => form.classList.remove('ativa'));
+
+    // 2. Adiciona a classe 'ativa' apenas no botão clicado e no formulário correspondente
+    if (tipo === 'vendedor') {
+        // Ativa o botão do vendedor e o formulário do vendedor
+        document.querySelector('.abas-cadastro button:nth-child(1)').classList.add('ativa');
+        document.getElementById('formCadastro').classList.add('ativa');
+    } else if (tipo === 'comprador') {
+        // Ativa o botão do comprador e o formulário do comprador
+        document.querySelector('.abas-cadastro button:nth-child(2)').classList.add('ativa');
+        document.getElementById('formComprador').classList.add('ativa');
+    }
+}
 const abas = document.querySelectorAll(".aba-btn");
 
 abas.forEach(botao => {
