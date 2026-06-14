@@ -122,3 +122,11 @@ function validarFormulario(event) {
         formulario.reportValidity();
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const footerHTML = `
+        <footer>
+            <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+        </footer>
+    `;
+    document.body.insertAdjacentHTML('beforeend', footerHTML);
+});
