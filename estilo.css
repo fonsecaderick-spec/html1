@@ -198,11 +198,6 @@ nav a:hover {
     padding: 25px;
     border-radius: 12px;
 }
-@media screen and (max-widht: 769px){
-.card-impacto-1{
-    max-width:100%;
-    flex-direction: column;
-}
 .container-impacto-2 {
       display: flex;
     grid-template-columns: repeat(2, 1fr);
@@ -224,10 +219,6 @@ nav a:hover {
 .card-impacto:nth-child(2){
     margin-top: 100px;
 }
-    @media screen and (max-widht: 769px){
-.card-impacto-2{
-   max-width:90%;
-    flex-direction: column;
 }
 
 .container-impacto-3{
@@ -254,11 +245,6 @@ nav a:hover {
 .container-impacto-3 .card-impacto-3:last-child {
     grid-column: span 2;
     justify-self: center;
-}
-        @media screen and (max-widht: 769px){
-.card-impacto-3{
-   max-width:95%;
-    flex-direction: column;
 }
 /* Container Geral da Seção da Loja */
 .secao-loja {
@@ -391,4 +377,9 @@ nav a:hover {
 /* Efeito ao clicar (Active) */
 .termina-cadastro:active {
   transform: scale(0.98); /* Dá um leve efeito de "afundar" ao clicar */
+}
+@media screen and (max-widht: 769px){
+.card-impacto-1{
+    max-width:100%;
+    flex-direction: column;
 }
