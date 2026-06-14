@@ -293,6 +293,16 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+.footer-2 { background-color: #29b42c; color: white; padding: 5px; }
+        .footer-2 {
+    background-color: #29b42c;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+    margin-top: 50px; 
+} 
+
 .termina-cadastro {
   /* Faz o link se comportar como um botão */
   display: inline-block;
