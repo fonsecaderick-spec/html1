@@ -62,14 +62,14 @@ button{
 
         .header h2 {
             font-family: monospace;
-            color: #4fc865;
+            color: black;
             font-size: 40px;
         }
 
         .header p {
             font-family: monospace;
             font-size: 30px;
-            color: green;
+            color: black;
         }
 
     .cadastro-produtor {
