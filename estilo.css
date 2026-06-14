@@ -147,7 +147,7 @@ nav a:hover {
 
 
 .container-impacto-1{
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px;
