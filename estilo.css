@@ -237,7 +237,7 @@ nav a:hover {
 .produto-card {
     background-color: #61cb4c;
     border-radius: 12px;
-    padding:120px;
+    padding:20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
@@ -251,10 +251,11 @@ nav a:hover {
 
 /* Container para controlar o tamanho das fotos uniformemente */
 .container-foto {
-    width: 140%;
-    height: 300px;
+    width: 100%;
+    height: 200px;
     border-radius: 8px;
     margin-bottom: 17px;
+    overflow: hidden;
 }
 
 .produto-foto {
