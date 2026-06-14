@@ -347,16 +347,3 @@ nav a:hover {
     display: flex;
     flex-direction: row;
 }
-
-/* Estilo padrão (para computadores) */
-.menu {
-    display: flex;
-    flex-direction: row;
-}
-
-/* Estilo apenas para celulares e tablets pequenos */
-@media (max-width: 768px) {
-    .menu {
-        flex-direction: column; /* O menu fica em lista, um embaixo do outro */
-    }
-}
