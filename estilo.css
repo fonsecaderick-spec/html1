@@ -200,7 +200,7 @@ nav a:hover {
 }
 @media screen and (max-widht: 769px){
 .card-impacto-1{
-    width:100%;
+    max-width:100%;
     flex-direction: column;
 }
 .container-impacto-2 {
@@ -226,7 +226,7 @@ nav a:hover {
 }
     @media screen and (max-widht: 769px){
 .card-impacto-2{
-    width:100%;
+   max-width:90%;
     flex-direction: column;
 }
 
@@ -257,7 +257,7 @@ nav a:hover {
 }
         @media screen and (max-widht: 769px){
 .card-impacto-3{
-    width:100%;
+   max-width:95%;
     flex-direction: column;
 }
 /* Container Geral da Seção da Loja */
