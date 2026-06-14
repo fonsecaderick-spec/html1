@@ -74,7 +74,6 @@ if (arquivoFoto) {
             } else {
 window.location.href = "conclusao.html";
 }
-);
 });
     
 }
