@@ -122,10 +122,13 @@ function validarFormulario(event) {
         formulario.reportValidity();
     }
 }
+// Função para injetar o rodapé automaticamente
 document.addEventListener("DOMContentLoaded", function() {
     const footerHTML = `
         <footer>
-            <p>&copy;©  2026-Agro Forte.</p>
+            <div class="footer-content">
+                <p>&copy;©  2026-Agro Forte.</p>
+            </div>
         </footer>
     `;
     document.body.insertAdjacentHTML('beforeend', footerHTML);
