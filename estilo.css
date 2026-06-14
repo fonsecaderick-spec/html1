@@ -293,7 +293,7 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-footer2 {
+footer-2 {
     width: 100%;
     background-color: #004d1a; /* Cor verde escura */
     color: white;
