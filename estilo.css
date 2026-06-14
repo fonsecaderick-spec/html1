@@ -144,45 +144,6 @@ nav a {
 nav a:hover {
     background: #14501f;
 }
-/* Container das abas (coloca os botões lado a lado no topo do card) */
-/* 1. Remove qualquer borda e fundo estranho do contêiner das abas */
-.abas-cadastro {
-    display: flex;
-    width: 100%;
-    margin-bottom: 25px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1); /* Linha sutil separando os botões do formulário */
-    background: none !important; /* Força tirar qualquer fundo transparente extra */
-    box-shadow: none !important; /* Força tirar qualquer sombra ou contorno */
-}
-
-/* 2. Garante que os botões não criem blocos ou bordas cinzas ao redor */
-.aba-btn {
-    flex: 1;
-    background: transparent !important;
-    border: none !important;
-    outline: none !important;
-    padding: 15px;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: none !important;
-}
-
-/* 3. Garante que os formulários em si não criem uma "borda dentro de outra borda" */
-.formulario-aba {
-    display: none;
-    background: transparent !important; /* Faz o fundo do formulário sumir para usar só o do card principal */
-    border: none !important; /* Tira bordas internas que possam ter vindo do estilo antigo */
-    box-shadow: none !important;
-    padding: 0 !important; /* Evita que o formulário empurre o conteúdo criando espaços duplos */
-}
-
-/* Mostra a aba ativa sem estragar o fundo */
-.formulario-aba.ativa {
-    display: block;
-}
 
 
 .container-impacto-1{
