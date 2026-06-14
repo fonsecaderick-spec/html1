@@ -328,32 +328,3 @@ nav a:hover {
 .termina-cadastro:active {
   transform: scale(0.98); /* Dá um leve efeito de "afundar" ao clicar */
 }
-/* 1. OBRIGATÓRIO: Faz com que o navegador calcule os tamanhos das caixas corretamente */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* 2. Garante que a estrutura base ocupe a tela inteira, mas sem estourar */
-html, body {
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden; /* Evita aquela barra de rolagem horizontal chata no celular */
-    font-size: 16px; /* Base para o uso de 'rem' */
-}
-
-/* 3. Regra de ouro para imagens: nunca vão passar do tamanho da tela ou do card */
-img, video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* 4. Modelo para as suas seções ou containers principais */
-.container-geral {
-    width: 100%;
-    max-width: 1200px; /* Não deixa o site esticar infinitamente em monitores gigantes */
-    margin: 0 auto;    /* Centraliza o bloco na tela */
-    padding: 0 20px;   /* Cria um respiro nas laterais para o texto não colar na borda do celular */
-}
