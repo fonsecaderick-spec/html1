@@ -328,20 +328,3 @@ nav a:hover {
 .termina-cadastro:active {
   transform: scale(0.98); /* Dá um leve efeito de "afundar" ao clicar */
 }
-/* Garante que o corpo da página ocupe a tela toda */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-/* Empurra o rodapé para o final da página */
-footer {
-    margin-top: auto; 
-    background-color: #2c3e50; /* Cor de fundo (ajuste como quiser) */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
