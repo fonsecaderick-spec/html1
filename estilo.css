@@ -299,6 +299,7 @@ nav a:hover {
     color: white;
     text-align: center;
     padding: 15px 0;
+    border-radius: 15px;
     margin-top: auto; /* Empurra o rodapé para o fim da tela */
 }
 
