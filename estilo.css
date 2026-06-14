@@ -378,8 +378,21 @@ nav a:hover {
 .termina-cadastro:active {
   transform: scale(0.98); /* Dá um leve efeito de "afundar" ao clicar */
 }
-@media screen and (max-widht: 769px){
-.card-impacto-1{
-    max-width:100%;
-    flex-direction: column;
+/* Estilo padrão (para computadores) */
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilo padrão (para computadores) */
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilo apenas para celulares e tablets pequenos */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* O menu fica em lista, um embaixo do outro */
+    }
 }
