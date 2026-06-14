@@ -66,18 +66,16 @@ if (arquivoFoto) {
             localStorage.setItem("cadastro_foto", e.target.result);
         } catch (erro) {
             console.warn("A foto é muito grande para o localStorage! O cadastro continuará sem ela.");
-            localStorage.removeItem("cadastro_foto"); // Garante que limpa o que falhou
+            localStorage.removeItem("cadastro_foto"); // Garante que limpa o que falhou 
         }
-        // Move o redirecionamento para fora do try/catch para garantir que ele mude de página sempre
-        window.location.href = "conclusao.html"; 
-    };
-
-    window.location.href = "conclusao.html";
+      leitor.readAsDataURL(arquivoFoto); // Executa a leitura da imagem
+            } else {
+window.location.href = "conclusao.html";
 }
-        }
-    });
+ }
+});
+    
 }
-
     // --- LÓGICA EXCLUSIVA DA TELA DE CONCLUSÃO ---
     // Tela de conclusão
 let resumoFazenda = document.getElementById("resumo-fazenda");
